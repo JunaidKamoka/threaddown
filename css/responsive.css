@@ -1,162 +1,180 @@
-@media (max-width: 1300px) {
-  .treatment_section .side_img {
-    opacity: 0.2;
+@media (max-width: 1120px) {
+  .slider_section .detail-box {
+    border: none;
   }
 }
-
-@media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
   .hero_area {
     height: auto;
   }
 
-  .header_section {
-    margin-top: 0;
-  }
-
-  .header_section .header_top .contact_nav {
-    justify-content: space-between;
-  }
-
-  .quote_btn-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .quote_btn-container a {
-    margin-right: 0;
-    margin-top: 10px;
-  }
-
   .slider_section {
-    padding: 75px 0 125px 0;
+    padding-bottom: 75px;
   }
 
-
-  .client_section .box {
-    margin: 15px;
+  .carousel-indicators {
+    bottom: -35px;
   }
 
-  .client_section .carousel_btn-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
+  .animal_section .animal_container .box {
+    flex-basis: 45%;
   }
 
-  .client_section .carousel-control-prev,
-  .client_section .carousel-control-next {
-    position: unset;
-    margin: 0 2.5px;
-    width: 45px;
-    height: 45px;
-  }
-
-  .info_section .info_main_row>div {
-    margin-bottom: 25px;
+  .contact_section .form_container {
+    padding: 0;
   }
 }
 
 @media (max-width: 768px) {
+
+
+  .layout_padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .layout_padding-top {
+    padding-top: 90px;
+  }
+
+  .layout_padding-bottom {
+    padding-bottom: 90px;
+  }
+
+  .hero_area::before {
+    width: 225px;
+    height: 110px;
+  }
+
+  .slider_section .detail-box {
+    text-align: center;
+  }
+
+  .slider_section .detail-box .btn-box {
+    justify-content: center;
+  }
+
   .about_section .detail-box {
-    margin-top: 45px;
+    width: 100%;
   }
 
-  .slider_section .dot_design {
-    opacity: 0.4;
+  .slider_section .img-box {
+    margin-bottom: 35px;
   }
 
-  .team_section .team_carousel {
+  .us_section .us_container {
+    flex-direction: column;
+  }
+
+  .us_section .us_container .box:not(:last-child) {
+    margin-bottom: 45px;
+  }
+
+  .us_section .us_container::before {
+    display: none;
+  }
+
+  .pet_section .img-box {
     padding: 0;
+    margin-left: 75px;
   }
 
-  .team_section .team_carousel .owl-nav {
+  .pet_section .detail-box {
+
+    margin-top: 90px;
+
+  }
+
+  .pet_section .detail-box .heading_container {
+
+    align-items: flex-start;
+    text-align: left;
+
+  }
+
+  .food_section {
+    background: linear-gradient(to bottom, #0a2050 30%, transparent 30%);
+
+  }
+
+  .food_section .food_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food_section .food_container .box:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .client_section #carouselExampleControls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .client_section .carousel_btn-box {
     margin-top: 45px;
   }
 
-  .team_section .team_carousel .owl-nav button {
-    position: unset;
-    transform: none;
+  .contact_section .map_container {
+    margin: 0;
   }
 
-  .contact_section .form_container {
-    margin-right: 0;
-    margin-bottom: 25px;
-  }
+  .info_section .row>div {
 
-  .info_section .info_main_row>div {
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
+
+@media (max-width: 576px) {
+  .heading_container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .animal_section .animal_container .box {
+    flex-basis: 95%;
+    animation: none !important;
+  }
+
+
+  .client_section .box {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .info_section .info_main_row>div:nth-last-child(1) {
-    margin-bottom: 0;
-  }
-
-  .info_section .info_contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info_section .social_box {
-    justify-content: center;
-  }
-
-  .info_section .info_post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info_section .info_post .post_box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info_section .info_post .post_box .img-box {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  .header_section .header_top .contact_nav a {
-    margin-right: 0;
-  }
-
-  .header_section .header_top .contact_nav a span {
-    display: none;
-  }
-
-  .header_section .header_top .contact_nav a i {
-    font-size: 28px;
+  .client_section .box .img-box {
     margin: 0;
-  }
-
-  .treatment_section .side_img {
-    display: none;
-  }
-
-  .info_section .info_top {
-    flex-direction: column;
-  }
-
-  .info_section .info_top .info_logo {
-    margin-right: 0;
     margin-bottom: 25px;
   }
+
+  .contact_section .map_container {
+    height: 475px;
+  }
+
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .pet_section .img-box::before {
+    background-size: cover;
+  }
+}
 
 @media (max-width: 420px) {}
 
-@media (max-width: 376px) {
-  .slider_section .detail_box h1 {
-    font-size: 2.5rem;
+@media (max-width: 375px) {
+  .contact_section .map_container {
+    height: 400px;
   }
 }
 
